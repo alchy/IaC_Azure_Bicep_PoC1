@@ -1,9 +1,9 @@
 // private DNS zone vnet Link w/ autoregistration of VMs (pro připojování jednotlivých vnet k privátní zóně)
 
 // parameters
-param privateZoneName string            // 
-param vnetId          string            // ID virtuální sítě, kterou chceme propojit
-param vnetName        string            // vnet name
+param privateZoneName string                                               // jméno privátní zóny pro získání existujícího objektu (depends)
+param vnetId          string                                               // ID virtuální sítě, kterou chceme propojit
+param vnetName        string                                               // vnet name pro sestavení jména linku
 
 // Odkaz na existující privátní DNS zónu (! nejde předat objekt jako v TF! :/ )
 resource existingPrivateDnsZone 'Microsoft.Network/privateDnsZones@2024-06-01' existing = {
