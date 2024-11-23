@@ -1,0 +1,26 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2024-06-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "location": {
+        "value": "westeurope"
+      },
+      "vnetName": {
+        "value": "my-vnet"
+      },
+      "vnetAddressPrefix": {
+        "value": "10.0.0.0/16"
+      },
+      "subnetName": {
+        "value": "my-sn"
+      },
+      "subnetAddressPrefix": {
+        "value": "10.0.1.0/24"
+      },
+      "privateZoneName": {
+        "value": "az.point4.cz"
+      }
+    }
+  }
+
+  
