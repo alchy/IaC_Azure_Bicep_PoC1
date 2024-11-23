@@ -1,4 +1,4 @@
-// private DNS zone vnet Link w/ autoregistration of VMs (pro připojování jednotlivých vnet k privátní zóně)
+// private DNS zone vnet Link (připojování jednotlivých vnet k privátní zóně)
 
 // parameters
 param privateZoneName string                                               // jméno privátní zóny pro získání existujícího objektu (depends)
