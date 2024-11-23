@@ -13,7 +13,6 @@ resource existingPrivateDnsZone 'Microsoft.Network/privateDnsZones@2024-06-01' e
 // Vytvoření odkazu na VNet pro DNS zónu
 resource vnetLink 'Microsoft.Network/privateDnsZones/virtualNetworkLinks@2020-06-01' = {
   parent: existingPrivateDnsZone                                           // Odkaz na existující DNS zónu jako rodičovský resource
-  //location: resourceGroup().location
   location: 'global'                                                       // Pro privátní DNS odkazy je lokace vždy 'global'
   name: '${existingPrivateDnsZone.name}-${vnetName}'
   properties: {
