@@ -6,19 +6,19 @@
         "value": "westeurope"
       },
       "vnetName": {
-        "value": "my-vnet"
+        "value": "jn-vnet"
       },
       "vnetAddressPrefix": {
         "value": "10.0.0.0/16"
       },
       "subnetName": {
-        "value": "my-sn"
+        "value": "jn-sn"
       },
       "subnetAddressPrefix": {
         "value": "10.0.1.0/24"
       },
       "privateZoneName": {
-        "value": "az.point4.cz"
+        "value": "az.point42.cz"
       }
     }
   }

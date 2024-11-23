@@ -3,7 +3,7 @@ targetScope = 'resourceGroup'
 
 /***************************************************************************************************************************
  *
- * az deployment group create --resource-group "my-resource-group" --template-file main.bicep --parameters parameters.json
+ * az deployment group create --resource-group "jn-resource-group" --template-file main.bicep --parameters parameters.json
  *
  ****************************************************************************************************************************/
 
