@@ -8,13 +8,13 @@ targetScope = 'resourceGroup'
  ****************************************************************************************************************************/
 
 // Parameters
-
 param location              string
 param vnetName              string
 param vnetAddressPrefix     string
 param subnetName            string
 param subnetAddressPrefix   string
 
+// Private zone name
 param privateZoneName       string
 
 // Virtual Network
@@ -47,13 +47,13 @@ module privateZone './modules/privateDnsZone.bicep' = {
   }
 }
 
-// Zavolání modulu pro VNet link
+// Zavolání modulu pro VNet link (přes modul možno iterovat více linků)
 module vnetLinkModule './modules/privateDnsZoneVnetLink.bicep' = {
   name: 'vnetLinkModule'
   scope: resourceGroup()
   params: {
     privateZoneName: privateZone.outputs.privateZoneName
-    vnetId: vnet.id                                           // ID virtuální sítě 2 join k DNS zóně
+    vnetId: vnet.id                                           // ID virtuální sítě pro join k DNS zóně
     vnetName: vnetName
   }
 }
