@@ -1,4 +1,4 @@
-// private DNS zone
+// private DNS zone (vytvoří privátní zónu)
 
 // parameters
 param zoneName string
