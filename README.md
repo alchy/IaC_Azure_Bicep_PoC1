@@ -1,4 +1,7 @@
-IaC_Azure_Bicep_PoC1 - private DNS zone
+IaC_Azure_Bicep_PoC1 - private DNS zone 
+----------------------------------------
+- modul pro vytvoření privátní DNS zóny
+- modul pro připojení vNet do privátní DNS zóny)
 
 is it required to have registered providers (az provider register --namespace privateDnsZones)
 
